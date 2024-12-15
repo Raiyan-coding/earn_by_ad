@@ -1,0 +1,130 @@
+/* Dark Theme with Gradient Background */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #e0e0e0;
+}
+
+/* Container Styling */
+.container {
+    background: linear-gradient(145deg, #0f3460, #16213e);
+    border-radius: 15px;
+    width: 90%;
+    max-width: 450px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    padding: 30px;
+    color: #e0e0e0;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Header Styling */
+.header {
+    background: linear-gradient(135deg, #0b0c10, #16213e);
+    color: #66fcf1;
+    padding: 15px;
+    border-radius: 12px 12px 0 0;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.header img {
+    width: 90px;
+    margin-bottom: 12px;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 26px;
+}
+
+/* Amount Section Styling */
+.amount-section {
+    background: linear-gradient(135deg, #ff6347, #ff4500);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 15px 0;
+    font-size: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Instructions Styling */
+.instructions {
+    background: linear-gradient(145deg, #16213e, #0f3460);
+    color: #e0e0e0;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.instructions h3 {
+    margin-top: 0;
+    color: #66fcf1;
+}
+
+.instructions input {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background-color: #0b0c10;
+    color: #e0e0e0;
+}
+
+.instructions input:focus {
+    outline: none;
+    border-color: #66fcf1;
+    box-shadow: 0 0 5px #66fcf1;
+}
+
+/* List Styling */
+.instructions ul {
+    text-align: left;
+    padding: 0;
+    margin: 12px 0;
+    list-style-type: square;
+}
+
+.instructions ul li {
+    margin-bottom: 12px;
+}
+
+/* Button Styling */
+.instructions button {
+    background-color: #45a29e;
+    color: #0b0c10;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.instructions button:hover {
+    background-color: #66fcf1;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+}
